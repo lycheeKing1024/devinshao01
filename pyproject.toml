@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["devinshao01"]
+package-dir = {"" = "src"}
+
+[project]
+name = "devinshao01"
+version = "0.1.0"
+description = "A Python-based project for agent development and testing"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Devin", email = "devin@devin.dev"},
+]
+
+[project.optional-dependencies]
+dev = [
+    "pylint>=3.0.0",
+]
