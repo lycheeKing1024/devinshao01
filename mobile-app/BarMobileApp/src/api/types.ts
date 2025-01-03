@@ -1,8 +1,24 @@
+export interface UserPreferences {
+  alcoholContent: 'none' | 'low' | 'medium' | 'high';
+  flavorPreferences: string[];
+  allergies: string[];
+  dietaryRestrictions: string[];
+  sugarPreference: 'low' | 'medium' | 'high';
+}
+
 export interface User {
   id: number;
   email: string;
   name: string;
-  preferences: Record<string, any>;
+  age: number;
+  gender?: string;
+  preferences: UserPreferences;
+  orderHistory: {
+    itemId: number;
+    date: string;
+    rating?: number;
+    feedback?: string;
+  }[];
 }
 
 export interface MenuItem {
