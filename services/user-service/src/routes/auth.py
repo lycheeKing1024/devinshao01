@@ -4,6 +4,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from typing import Optional
 
+from ..database import get_db
 from ..models.user import User
 from ..utils.security import (
     verify_password,

@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_
 
 from ..database import get_db
-from ..models.user import User
+from ..models.user import User, UserFollow
 from ..utils.security import get_current_user
 
 router = APIRouter()
