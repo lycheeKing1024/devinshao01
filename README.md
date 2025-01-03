@@ -6,10 +6,10 @@ A Python-based project for agent development and testing.
 
 ```
 .
-├── src/
-│   └── devinshao01/
-├── tests/
-└── README.md
+ src/
+   └── devinshao01/
+ tests/
+ README.md
 ```
 
 ## Development
